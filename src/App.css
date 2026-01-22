@@ -193,3 +193,11 @@ body{
   .moving-words span,.floating-words span{animation:none}
 }
 
+/* On small screens the floating decorative words can overlap legible content
+   because they are absolute-positioned and use near-opaque backgrounds. Hide
+   them on small viewports to avoid overlap; change or remove this rule to
+   instead scale/tone them if you prefer. */
+@media (max-width:720px){
+  .floating-words{display:none}
+}
+
